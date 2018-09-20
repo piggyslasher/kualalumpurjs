@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "kuala-lumpur-js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": [
+    {
+      "test": "lerna run test",
+      "build": "npx lerna build",
+      "build-storybook": "yarn run --cwd packages/the-button --scope the-button build-storybook",
+      "start": "npx lerna exec yarn start"
+    }
+  ],
+  "devDependencies": {
+    "lerna": "^3.3.0"
+  }
+}
